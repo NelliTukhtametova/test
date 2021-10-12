@@ -1,10 +1,10 @@
-let sliderItems = document.getElementById('slides'), //контейнер слайдеров
+let sliderItems = document.getElementById('slides'), 
   prev = document.getElementById('prev'),
   next = document.getElementById('next'),
   dots = document.querySelectorAll(".dot");
 
 function slide() {
-  let slides = sliderItems.getElementsByClassName('slide'), //слайды
+  let slides = sliderItems.getElementsByClassName('slide'), 
     slidesLength = slides.length, //5
     index = 0,
     allowShift = true,
