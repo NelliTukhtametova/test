@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0 auto;
+}
+
+#wrapper {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  z-index: 1;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: -400px;
+  width: 10000px;
+}
+
+.slides.shifting {
+  transition: all 1s ease-out;
+}
+
+.slide {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #333;
+}
+
+.dot.active {
+  background-color: olive;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
